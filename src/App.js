@@ -38,24 +38,24 @@ function App() {
                     <button>Hex price: {hex}</button>
                 </div>
 
-    {filteredCoins.map(coin => {
-        return (
-            <Coin
-                key={coin.id}
-                name={coin.name}
-                volume={coin.market_cap}
-                image={coin.image}
-                price={coin.current_price}
-                priceChange={coin.price_change_percentage_24h}
-                marketcapChange={coin.market_cap_change_percentage_24h}
-                symbol={coin.symbol}
-                marketcap={coin.total_volume}
-                rank={coin.market_cap_rank}
-            />
-        );
+                {filteredCoins.map(coin => {
+                    return (
+                        <Coin
+                            key={coin.id}
+                            name={coin.name}
+                            volume={coin.market_cap}
+                            image={coin.image}
+                            price={coin.current_price}
+                            priceChange={coin.price_change_percentage_24h}
+                            marketcapChange={coin.market_cap_change_percentage_24h}
+                            symbol={coin.symbol}
+                            marketcap={coin.total_volume}
+                            rank={coin.market_cap_rank}
+                        />
+                    );
 
-    })}
-        </div>
+                })}
+            </div>
         </div>
     );
 
