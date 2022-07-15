@@ -1,5 +1,6 @@
 import React from 'react';
 import './Coin.css';
+
 const Coin = ({
                   price,
                   symbol,
@@ -12,6 +13,7 @@ const Coin = ({
 
 
               }) => {
+
     return (<div className='coin-container'>
 
             <div>
@@ -19,11 +21,6 @@ const Coin = ({
                     <header> {hex}</header>
                 </div>
                 <div>
-                    <div className='coinApp'>
-                        <div>
-                            <div id='hexPrice'>
-                                <button>Hex price: {hex}</button>
-                            </div>
 
                     <div className='border '>
                         <div className='coinRow'>
@@ -51,9 +48,10 @@ const Coin = ({
                 </div>
             </div>
         </div>
-        </div>
-        </div>
+
 
     );
-}
+
+};
+
 export default Coin;
