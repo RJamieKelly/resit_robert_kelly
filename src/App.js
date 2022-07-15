@@ -7,10 +7,13 @@ import Coin from "./Coin";
 
 
 
+
+
 function App() {
 
     const [coins, setCoins] = useState([]);
     const [search, setSearch] = useState('');
+    const [hex, setHex] = useState('');
     const filteredCoins = coins.filter(coin =>
         coin.symbol.toLowerCase().includes(search.toLowerCase())
     );
@@ -22,9 +25,18 @@ function App() {
             })
             .catch(error => console.log(error));
     }, []);
+    axios.get('https://uniswapdataapi.azurewebsites.net/api/hexPrice')
+        .then((response) => {
+            setHex(response.data.hexUsd);
+            console.log(response);
+        });
     return (
         <div className="App">
             <p>Cryptocurrencies ranked by market cap</p>
+            <div>
+                <div id='hexPrice'>
+                    <button>Hex price: {hex}</button>
+                </div>
 
     {filteredCoins.map(coin => {
         return (
@@ -43,6 +55,7 @@ function App() {
         );
 
     })}
+        </div>
         </div>
     );
 
