@@ -1,0 +1,78 @@
+
+.rank {
+    display: flex;
+    width: 50px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.border {
+    display: grid;
+
+
+    border: 1px solid #d7d7d7;
+
+
+}
+
+
+.coin {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+
+    min-width: 10px;
+}
+
+.coin img {
+    height: 45px;
+    width: 45px;
+    margin-right: 10px;
+}
+
+.coinSymbol {
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.coinData {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.coinPrice {
+    width: 120px;
+    font-size: 20px;
+
+}
+
+.coinVolume {
+
+    width: 350px;
+    font-size: 20px;
+
+}
+
+.coinMarketcap {
+    width: 270px;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.coinPercent {
+    width: 100px;
+    font-size: 20px;
+
+}
+
+.red {
+    color: #f00606;
+    border-color: #f00606;
+}
+
+.green {
+    color: #11d811;
+}

@@ -1,2 +1,68 @@
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.coinApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14px;
+  color: #fff;
+  font-size:30px;
+
+
+}
+
+#hexPrice{
+  position: relative;
+  justify-content: right;
+  size: 5px;
+  width: 100px;
+
+}
+
+.coinLinks{
+  width: 350px;
+}
+.coinSearch {
+  margin-bottom: 74px;
+  margin-right: 25px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.coinText {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.coinCap {
+  margin-bottom: 12px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.coinEnter {
+  padding-left: 26px;
+  width: 300px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-image: linear-gradient(30deg, #ffdb01 0%, #ff851f 30%, #ff3d3d 52%, #ff0f6f 70%, #f0f 100%);
+
+  color: #111;
+}
+
+
 
